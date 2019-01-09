@@ -1,4 +1,9 @@
 # githook
+#git init 
+```
+git init --bare
+```
+
 ```
 # Add your server as a Git remote called 'deploy'
 git remote add deploy ssh://<your-name>@<your-ip>/srv/git/<your-project>.git/
@@ -6,7 +11,7 @@ git remote add deploy ssh://<your-name>@<your-ip>/srv/git/<your-project>.git/
 git push deploy master
 ```
 
-/srv/git/<your-app>.git/hooks/post-receive
+#/srv/git/<your-app>.git/hooks/post-receive
 
 ```
 #!/bin/sh
@@ -28,8 +33,7 @@ rm -rf $TARGET
 mv $TEMP $TARGET
 ```
 
-
-push to the server
+#push to the server
 ```
 git add . 
 git commit -m "<commit message>"
