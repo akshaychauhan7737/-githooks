@@ -27,3 +27,11 @@ cd /
 rm -rf $TARGET
 mv $TEMP $TARGET
 ```
+
+
+push to the server
+```
+git add . 
+git commit -m "<commit message>"
+git push deploy master
+```
