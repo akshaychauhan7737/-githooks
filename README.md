@@ -1,5 +1,14 @@
 # githook
 ```
+# Add your server as a Git remote called 'deploy'
+git remote add deploy ssh://<your-name>@<your-ip>/srv/git/<your-project>.git/
+# Push your code and deploy
+git push deploy master
+```
+
+/srv/git/<your-app>.git/hooks/post-receive
+
+```
 #!/bin/sh
 # The production directory
 TARGET="/srv/www/<your-app>"
